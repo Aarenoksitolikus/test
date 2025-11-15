@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-<!--  common properties-->
+  <!--  common properties-->
   <groupId>ru.itis.oris</groupId>
   <artifactId>test</artifactId>
   <version>0.0.1</version>
@@ -16,7 +16,7 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
 
-<!--    versions-->
+    <!--    versions-->
     <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
     <jakarta.jsp.version>3.1.1</jakarta.jsp.version>
     <jakarta.jstl.version>3.0.0</jakarta.jstl.version>
@@ -26,7 +26,7 @@
     <bcrypt.version>0.4</bcrypt.version>
   </properties>
 
-<!--  repository references-->
+  <!--  repository references-->
   <repositories>
     <repository>
       <id>glassfish-repo</id>

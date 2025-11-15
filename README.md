@@ -32,7 +32,7 @@
     └──main
         ├── java
         │   └── ru.itis.oris.test
-        │       ├── servlet       (Servlets)
+        │       ├── ru.itis.oris.test.servlet       (Servlets)
         │       ├── model         (Entity classes, DAO)
         │       ├── service       (Business logic)
         │       ├── filter        (AuthenticationFilter etc.)

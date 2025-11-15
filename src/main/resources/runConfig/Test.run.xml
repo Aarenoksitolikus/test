@@ -7,7 +7,7 @@
     <predefined_log_file id="Tomcat Host Manager Log" />
     <option name="catalinaBase" value="C:\Users\super\.SmartTomcat\test\test" />
     <option name="contextPath" value="/" />
-    <option name="docBase" value="C:\Users\super\OpenideProjects\test\src\webapp" />
+    <option name="docBase" value=" target/test-0.0.1.war /path/to/tomcat/webapps/ " />
     <option name="envOptions">
       <map />
     </option>

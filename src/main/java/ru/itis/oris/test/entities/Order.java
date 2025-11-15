@@ -1,4 +1,4 @@
-package ru.itis.oris.test.models;
+package ru.itis.oris.test.entities;
 
 
 import lombok.AllArgsConstructor;
@@ -11,4 +11,6 @@ public class Order {
     int user_id;
     double total_price;
     boolean status;
+
+    public Order(){}
 }

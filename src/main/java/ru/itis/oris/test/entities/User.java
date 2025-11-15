@@ -1,4 +1,4 @@
-package ru.itis.oris.test.models;
+package ru.itis.oris.test.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,4 +10,6 @@ public class User {
     String username;
     String hashPassword;
     String role;
+
+    public User() {}
 }

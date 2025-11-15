@@ -10,4 +10,6 @@ public class OrderItem {
     int order_id;
     int product_id;
     int quantity;
+
+    public OrderItem() {}
 }

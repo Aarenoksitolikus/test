@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блог-платформа</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <!-- Header with full navigation -->
@@ -16,9 +16,9 @@
         <nav>
             <div class="logo">📝 Блог-платформа</div>
             <ul class="nav-links">
-                <li><a href="jsp/index">Главная</a></li>
-                <li><a href="jsp/posts">Посты</a></li>
-                <li><a href="jsp/comments">Комментарии</a></li>
+                <li><a href="/index">Главная</a></li>
+                <li><a href="/posts">Посты</a></li>
+                <li><a href="/comments">Комментарии</a></li>
             </ul>
             <div class="auth-links">
                 <c:choose>
@@ -40,7 +40,7 @@
 <nav id="mainNav" class="nav-sidebar">
     <ul>
         <li><a href="/index">Главная</a></li>
-        <li><a href="jsp/posts">Посты</a></li>
+        <li><a href="/posts">Посты</a></li>
         <li><a href="jsp/comments">Комментарии</a></li>
         <c:choose>
             <c:when test="${not empty sessionScope.user}">

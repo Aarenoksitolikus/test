@@ -6,6 +6,12 @@ public class User {
     private String passwordHash;
     private String role;
 
+    public User(String username, String passwordHash, String role) {
+        this.username = username;
+        this.passwordHash = passwordHash;
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +

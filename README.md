@@ -6,17 +6,17 @@
 
 ### Обязательные технологии:
 
-- Java Servlets
-- JSP + JSTL
-- JDBC с PreparedStatements
+- Java Servlets // + 
+- JSP + JSTL // +
+- JDBC с PreparedStatements // +
 - Фильтры (минимум *AuthenticationFilter*)
 - MVC архитектура
 
 ### Требования к безопасности:
 
-- Хеширование паролей (*BCrypt*)
-- Защита от SQL-инъекций
-- Валидация входных данных
+- Хеширование паролей (*BCrypt*) // +
+- Защита от SQL-инъекций // preparedStat... (?, ?, ?)
+- Валидация входных данных //  
   - пустота полей форм (*client/server-side*)
   - сложность пароля (*client/server-side*)
 - Проверка прав доступа

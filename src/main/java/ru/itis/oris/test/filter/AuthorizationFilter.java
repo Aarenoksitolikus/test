@@ -35,7 +35,8 @@ public class AuthorizationFilter extends HttpFilter {
                 (session == null || session.getAttribute("user") == null)
                         && !uri.equals("/index") &&
                         !uri.startsWith("/css/") && !uri.startsWith("/js/") &&
-                        !uri.equals("/login") && !uri.equals("/register")
+                        !uri.equals("/login") && !uri.equals("/register") &&
+                        !uri.equals("/books")
         ) {
             httpResponse.sendRedirect("/login");
             return;

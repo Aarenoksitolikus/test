@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import ru.itis.oris.test.model.Role;
 
 import java.io.IOException;
@@ -15,13 +16,18 @@ public class ModeratorFilter extends HttpFilter {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-//        super.doFilter(req, res, chain);
+        HttpSession session = req.getSession(false);
 
-        var paramMap = req.getParameterMap();
-        var role = paramMap.get("role");
-
-        if (role != null && !role[0].equals(Role.moderator.name())) {
+        // Проверяем сессию и роль
+        if (session == null || session.getAttribute("role") == null) {
             res.sendRedirect(req.getContextPath() + "/auth");
+            return;
+        }
+
+        String role = session.getAttribute("role").toString();
+        if (!role.equals(Role.moderator.name())) {
+            res.sendRedirect(req.getContextPath() + "/auth");
+            return;
         }
 
         chain.doFilter(req, res);

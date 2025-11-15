@@ -34,7 +34,8 @@ public class LoginServlet extends HttpServlet {
             User user = AuthService.authenticate(userName, password);
             if (user == null) {
                 System.out.println("❌ Invalid credentials for: " + userName);
-                resp.sendRedirect(req.getContextPath() + "/userName?error=true");
+                // ИСПРАВЛЕНО: правильный путь редиректа при ошибке
+                resp.sendRedirect(req.getContextPath() + "/login?error=true");
                 return;
             }
 

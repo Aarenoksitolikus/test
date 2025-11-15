@@ -14,6 +14,15 @@ public class AuthServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if ("true".equals(req.getParameter("logout"))) {
+            HttpSession session = req.getSession(false);
+            if (session != null) {
+                session.invalidate();
+            }
+            resp.sendRedirect(req.getContextPath() + "/auth");
+            return;
+        }
+
         HttpSession session = req.getSession(false);
         boolean isLoggedIn = session != null && session.getAttribute("user_id") != null;
 

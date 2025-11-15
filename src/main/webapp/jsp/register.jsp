@@ -16,7 +16,7 @@
     <% } %>
     <form action="${pageContext.request.contextPath}/register" method="post">
         <div class="form-group">
-            <label for="uder_name"><i class="fas fa-user"></i> Логин</label>
+            <label for="user_name"><i class="fas fa-user"></i> Логин</label>
             <input type="text" id="user_name" name="user_name" placeholder="Введите логин" required>
         </div>
         <div class="form-group">

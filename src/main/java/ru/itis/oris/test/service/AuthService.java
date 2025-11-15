@@ -13,9 +13,8 @@ public class AuthService {
     public static User authenticate(String userName, String password) {
         try {
             System.out.println("🔧 Auth attempt for: " + userName);
-            User user = EntityManager.INSTANCE.getUnique(User.class, Map.of("user_name", userName));
+            User user = EntityManager.INSTANCE.getUnique(User.class, Map.of("username", userName));
             if (user != null) {
-
                 String hashedPassword = PasswordHashUtil.hashPassword(password);
                 if (user.getHashedPassword().equals(hashedPassword)) {
                     return user;
@@ -32,8 +31,8 @@ public class AuthService {
 
     public static boolean isUserNameExists(String userName) {
         try {
-            var user = EntityManager.INSTANCE.getUnique(User.class, Map.of("user_name", userName));
-            return user != null;
+            var users = EntityManager.INSTANCE.get(User.class, Map.of("username", userName));
+            return users != null && !users.isEmpty();
         } catch (Exception e) {
             e.printStackTrace();
             return false;
@@ -42,8 +41,8 @@ public class AuthService {
 
     public static boolean isModerator(String userName) {
         try {
-            var user = EntityManager.INSTANCE.getUnique(User.class, Map.of("user_name", userName));
-            return user != null && user.getRole().equals(Role.moderator);
+            var users = EntityManager.INSTANCE.get(User.class, Map.of("username", userName));
+            return users != null && !users.isEmpty() && users.get(0).getRole().equals(Role.moderator.name());
         } catch (Exception e) {
             e.printStackTrace();
             return false;

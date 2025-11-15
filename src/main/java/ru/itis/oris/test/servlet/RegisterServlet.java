@@ -14,7 +14,7 @@ import ru.itis.oris.test.util.PasswordHashUtil;
 
 import java.io.IOException;
 
-@WebServlet(urlPatterns = {"/register", "/register*"})
+@WebServlet(urlPatterns = {"/register", "/register/*"})
 public class RegisterServlet extends HttpServlet {
 
     @Override
@@ -38,7 +38,6 @@ public class RegisterServlet extends HttpServlet {
         String userName = req.getParameter("user_name");
         String password = req.getParameter("password");
 
-
         if (userName == null || password == null ||
                 userName.isBlank() || password.isBlank()) {
             resp.sendRedirect(req.getContextPath() + "/register?error=missing");
@@ -54,12 +53,13 @@ public class RegisterServlet extends HttpServlet {
 
             boolean isModerator = AuthService.isModerator(userName);
 
-            User user = new User(0, userName, hashedPassword, isModerator ? Role.moderator : Role.user);
+            User user = new User(0, userName, hashedPassword, isModerator ? Role.moderator.name() : Role.user.name());
             user = EntityManager.INSTANCE.create(user);
 
             HttpSession session = req.getSession(true);
             session.setAttribute("user_id", user.getId());
             session.setAttribute("user_name", user.getUserName());
+            session.setAttribute("role", user.getRole());
             resp.sendRedirect(req.getContextPath() + "/main");
 
         } catch (Exception e) {

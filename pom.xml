@@ -93,6 +93,7 @@
       <version>${kotlin.version}</version>
       <scope>test</scope>
     </dependency>
+<!--    https://github.com/SlavilJunior/DeORM-->
     <dependency>
       <groupId>com.slavikjunior</groupId>
       <artifactId>deorm</artifactId>

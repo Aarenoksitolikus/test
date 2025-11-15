@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer>
-    <p><b>Author:</b> Ivanov Maxim</p>
-    <p><a href="https://www.t.me/Aarenoksitolikus">Contact me</a></p>
-</footer>
+<div class="footer">
+    <p>&copy; 2025 Кафе "Орис". Все права защищены.</p>
+</div>

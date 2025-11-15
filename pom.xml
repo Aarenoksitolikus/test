@@ -95,7 +95,7 @@
     </dependency>
     <dependency>
       <groupId>com.slavikjunior</groupId>
-      <artifactId>DeORM</artifactId>
+      <artifactId>deorm</artifactId>
       <version>1.0.0</version>
     </dependency>
   </dependencies>

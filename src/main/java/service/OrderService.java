@@ -40,6 +40,7 @@ public class OrderService {
         return orders;
     }
 
+
     public List<Order> getAllOrders() {
         List<Order> orders = orderDao.findAll();
         for (Order order : orders) {

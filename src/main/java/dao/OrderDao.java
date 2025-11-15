@@ -1,5 +1,7 @@
 package dao;
 
+import util.DatabaseConnection;
+import model.Order;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

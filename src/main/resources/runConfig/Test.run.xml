@@ -1,4 +1,5 @@
 <component name="ProjectRunConfigurationManager">
+
   <configuration default="false" name="Test" type="com.poratu.idea.plugins.tomcat">
     <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
     <predefined_log_file enabled="true" id="Tomcat Access Log" />

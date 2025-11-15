@@ -5,6 +5,7 @@ import model.User;
 import model.Role;
 import util.PasswordHasher;
 
+
 public class AuthService {
     private final UserDao userDao = new UserDao();
     

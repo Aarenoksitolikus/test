@@ -29,4 +29,7 @@
 <!--        <exception-type>java.lang.Throwable</exception-type>-->
 <!--        <location>/error.html</location>-->
 <!--    </error-page>-->
+    <welcome-file-list>
+        <welcome-file>main</welcome-file>
+    </welcome-file-list>
 </web-app>

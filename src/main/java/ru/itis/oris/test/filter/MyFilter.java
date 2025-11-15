@@ -8,8 +8,12 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import ru.itis.oris.test.model.Role;
+import ru.itis.oris.test.model.User;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebFilter("/*")
 public class MyFilter extends HttpFilter {
@@ -33,6 +37,29 @@ public class MyFilter extends HttpFilter {
             return;
         }
 
+        System.out.println("Filter check: " + path);
 
+        System.out.println("Redirecting to /login");
+
+        HttpSession session = ((HttpServletRequest) req).getSession(true);
+
+        User user = (User) session.getAttribute("user");
+
+        if (path.equals("/main") || path.equals("/register") || path.equals("/login")) {
+            chain.doFilter(req, res);
+            return;
+        }
+
+        if (user == null) {
+            response.sendRedirect(request.getContextPath() + "/register");
+            return;
+        }
+
+        if (path.equals("/admin") && !(user.getRole() == Role.ADMIN)) {
+            response.sendRedirect(request.getContextPath() + "/main");
+            return;
+        }
+
+        chain.doFilter(req,res);
     }
 }

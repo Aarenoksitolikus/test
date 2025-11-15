@@ -1,5 +1,7 @@
 package ru.itis.oris.test.service;
 
+import ru.itis.oris.test.model.User;
+import ru.itis.oris.test.util.HashUtil;
 import ru.itis.oris.test.util.UserDAO;
 
 import java.sql.Connection;
@@ -26,4 +28,23 @@ public class UserService {
             throw new RuntimeException(e);
         }
     }
+
+    public boolean saveNewUser(String username, String password) throws SQLException {
+        userDao.createUser(username, password);
+        return true;
+    }
+
+    public boolean isUserExist(String username) throws SQLException {
+        return userDao.isUserExist(username);
+    }
+
+    public User authenticateUser(String username, String pass) throws SQLException {
+        User user = userDao.getUserByusername(username);
+
+        if (HashUtil.verify(pass, user.getHashPassword())) {
+            return user;
+        }
+        return null;
+    }
+
 }

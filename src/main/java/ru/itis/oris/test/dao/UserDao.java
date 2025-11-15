@@ -32,7 +32,7 @@ public class UserDao {
                 return Optional.of(new User(
                     rs.getInt("id"),
                     rs.getString("username"),
-                    rs.getString("password_hash"),
+                    rs.getString("hashPassword"),
                     rs.getString("role")
                 ));
             }

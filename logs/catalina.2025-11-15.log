@@ -1490,3 +1490,133 @@
 15-Nov-2025 17:10:32.822 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml] has finished in [737] ms
 15-Nov-2025 17:10:32.827 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 15-Nov-2025 17:10:32.837 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [811] milliseconds
+15-Nov-2025 17:13:49.705 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:13:49.707 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Nov-2025 17:13:49.713 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Nov-2025 17:13:49.720 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:13:49.730 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:13:56.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/11.0.13
+15-Nov-2025 17:13:56.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         Oct 10 2025 13:57:31 UTC
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  11.0.13.0
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             6.14.0-35-generic
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/palmadae/.jdks/corretto-22.0.2
+15-Nov-2025 17:13:56.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            22.0.2+9-FR
+15-Nov-2025 17:13:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     Amazon.com Inc.
+15-Nov-2025 17:13:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/palmadae/IdeaProjects/test
+15-Nov-2025 17:13:56.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:13:56.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Nov-2025 17:13:56.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Nov-2025 17:13:56.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/palmadae/IdeaProjects/test
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/palmadae/IdeaProjects/test/temp
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/palmadae/IdeaProjects/test/conf/logging.properties
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Nov-2025 17:13:56.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/home/palmadae/idea-IU-251.25410.129/lib/idea_rt.jar=39527
+15-Nov-2025 17:13:56.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+15-Nov-2025 17:13:56.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+15-Nov-2025 17:13:56.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+15-Nov-2025 17:13:56.824 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Nov-2025 17:13:57.136 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:13:57.152 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [549] milliseconds
+15-Nov-2025 17:13:57.190 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Nov-2025 17:13:57.190 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+15-Nov-2025 17:13:57.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml]
+15-Nov-2025 17:13:57.968 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Nov-2025 17:13:58.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml] has finished in [807] ms
+15-Nov-2025 17:13:58.011 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:13:58.022 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [868] milliseconds
+15-Nov-2025 17:15:26.295 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:15:26.297 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Nov-2025 17:15:26.303 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Nov-2025 17:15:26.309 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:15:26.321 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:15:34.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/11.0.13
+15-Nov-2025 17:15:34.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         Oct 10 2025 13:57:31 UTC
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  11.0.13.0
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             6.14.0-35-generic
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/palmadae/.jdks/corretto-22.0.2
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            22.0.2+9-FR
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     Amazon.com Inc.
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/palmadae/IdeaProjects/test
+15-Nov-2025 17:15:34.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:15:34.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/palmadae/IdeaProjects/test
+15-Nov-2025 17:15:34.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/palmadae/IdeaProjects/test/temp
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/palmadae/IdeaProjects/test/conf/logging.properties
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/home/palmadae/idea-IU-251.25410.129/lib/idea_rt.jar=34589
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+15-Nov-2025 17:15:34.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+15-Nov-2025 17:15:34.623 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Nov-2025 17:15:34.911 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:15:34.927 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [544] milliseconds
+15-Nov-2025 17:15:34.984 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Nov-2025 17:15:34.984 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+15-Nov-2025 17:15:34.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml]
+15-Nov-2025 17:15:35.696 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Nov-2025 17:15:35.753 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml] has finished in [754] ms
+15-Nov-2025 17:15:35.758 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:15:35.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [839] milliseconds
+15-Nov-2025 17:18:19.933 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:18:19.934 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Nov-2025 17:18:19.940 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Nov-2025 17:18:19.946 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:18:19.959 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:18:27.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Имя версии сервера:    Apache Tomcat/11.0.13
+15-Nov-2025 17:18:27.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Сервер собран:         Oct 10 2025 13:57:31 UTC
+15-Nov-2025 17:18:27.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Номер версии сервера:  11.0.13.0
+15-Nov-2025 17:18:27.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Nov-2025 17:18:27.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия ОС:             6.14.0-35-generic
+15-Nov-2025 17:18:27.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Архитектура:           amd64
+15-Nov-2025 17:18:27.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/palmadae/.jdks/corretto-22.0.2
+15-Nov-2025 17:18:27.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Версия JVM:            22.0.2+9-FR
+15-Nov-2025 17:18:27.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Производитель JVM:     Amazon.com Inc.
+15-Nov-2025 17:18:27.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/palmadae/IdeaProjects/test
+15-Nov-2025 17:18:27.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:18:27.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Nov-2025 17:18:27.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Nov-2025 17:18:27.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Nov-2025 17:18:27.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Nov-2025 17:18:27.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Nov-2025 17:18:27.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:55595,suspend=y,server=n
+15-Nov-2025 17:18:27.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:/home/palmadae/idea-IU-251.25410.129/plugins/java/lib/rt/debugger-agent.jar=file:///tmp/capture11383880168198223724.props
+15-Nov-2025 17:18:27.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/palmadae/Downloads/apache-tomcat-11.0.13
+15-Nov-2025 17:18:27.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/palmadae/IdeaProjects/test
+15-Nov-2025 17:18:27.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/palmadae/IdeaProjects/test/temp
+15-Nov-2025 17:18:27.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/palmadae/IdeaProjects/test/conf/logging.properties
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddebugger.agent.enable.coroutines=true
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+15-Nov-2025 17:18:27.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+15-Nov-2025 17:18:27.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+15-Nov-2025 17:18:27.446 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Nov-2025 17:18:27.763 INFO [main] org.apache.coyote.AbstractProtocol.init Инициализация ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:18:27.789 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [603] milliseconds
+15-Nov-2025 17:18:27.836 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Nov-2025 17:18:27.836 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+15-Nov-2025 17:18:27.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml]
+15-Nov-2025 17:18:28.591 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Nov-2025 17:18:28.654 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/home/palmadae/IdeaProjects/test/conf/Catalina/localhost/ROOT.xml] has finished in [805] ms
+15-Nov-2025 17:18:28.659 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:18:28.672 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [881] milliseconds
+15-Nov-2025 17:21:09.883 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:21:09.886 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Nov-2025 17:21:09.892 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Nov-2025 17:21:09.899 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Nov-2025 17:21:09.911 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

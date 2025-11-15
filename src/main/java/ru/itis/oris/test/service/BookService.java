@@ -2,7 +2,6 @@ package ru.itis.oris.test.service;
 
 import ru.itis.oris.test.model.Book;
 import ru.itis.oris.test.util.BookDAO;
-import ru.itis.oris.test.util.UserDAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +12,7 @@ public class BookService {
     private BookDAO bookDAO;
 
     public BookService() {
-        this.bookDAO = bookDAO;
+        this.bookDAO = createBookDAO();
     }
 
     public List<Book> getBooks() throws SQLException {
@@ -28,7 +27,7 @@ public class BookService {
         bookDAO.deleteBook(book.getTitle(), book.getAuthor());
     }
 
-    public BookDAO createBookDAO() {
+    private BookDAO createBookDAO() {
         try {
             Class.forName("org.postgresql.Driver");
             Connection connection = DriverManager.getConnection(

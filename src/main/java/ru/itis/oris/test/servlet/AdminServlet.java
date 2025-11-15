@@ -33,7 +33,7 @@ public class AdminServlet extends HttpServlet {
 
         try {
             switch (action) {
-                case "updateRole":
+                case "createBook":
                     if (title != null && action != null) {
                         Book book = new Book(title, author, true);
 

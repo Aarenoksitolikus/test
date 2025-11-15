@@ -23,5 +23,7 @@ public class UserFilter extends HttpFilter {
         if (role != null && role[0].equals(Role.unknown_user.name())) {
             res.sendRedirect(req.getContextPath() + "/auth");
         }
+
+        chain.doFilter(req, res);
     }
 }

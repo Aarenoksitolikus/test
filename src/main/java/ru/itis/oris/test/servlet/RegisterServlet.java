@@ -51,7 +51,10 @@ public class RegisterServlet extends HttpServlet {
             }
 
             String hashedPassword = PasswordHashUtil.hashPassword(password);
-            User user = new User(0, userName, hashedPassword, Role.user);
+
+            boolean isModerator = AuthService.isModerator(userName);
+
+            User user = new User(0, userName, hashedPassword, isModerator ? Role.moderator : Role.user);
             user = EntityManager.INSTANCE.create(user);
 
             HttpSession session = req.getSession(true);

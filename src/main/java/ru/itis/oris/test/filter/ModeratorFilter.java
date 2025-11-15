@@ -1,7 +1,6 @@
 package ru.itis.oris.test.filter;
 
 import jakarta.servlet.FilterChain;
-import jakarta.servlet.GenericFilter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpFilter;
@@ -11,7 +10,7 @@ import ru.itis.oris.test.model.Role;
 
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/crete", "/crete/*", "/edit", "/edit/*", "/comment", "/comment/*"})
+@WebFilter(urlPatterns = {"/remove", "/remove/*"})
 public class ModeratorFilter extends HttpFilter {
 
     @Override
@@ -24,5 +23,7 @@ public class ModeratorFilter extends HttpFilter {
         if (role != null && !role[0].equals(Role.moderator.name())) {
             res.sendRedirect(req.getContextPath() + "/auth");
         }
+
+        chain.doFilter(req, res);
     }
 }

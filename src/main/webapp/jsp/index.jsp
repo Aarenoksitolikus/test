@@ -10,10 +10,8 @@
 <body>
 <jsp:include page="/jsp/partial/header.jsp" />
 <main class="container">
-<!--    тут что-то будет-->
 </main>
 <jsp:include page="/jsp/partial/footer.jsp" />
-
 <script src="/js/script.js"></script>
 </body>
 </html>

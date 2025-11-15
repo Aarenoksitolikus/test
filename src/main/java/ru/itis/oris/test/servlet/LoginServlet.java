@@ -19,10 +19,10 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.setCharacterEncoding("UTF-8");
-        String email = req.getParameter("email");
+        String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        Optional<User> userOpt = userDao.findByEmail(email);
+        Optional<User> userOpt = userDao.findByUsername(username);
         if (userOpt.isEmpty()) {
             resp.sendRedirect("login.jsp?error=notfound");
             return;

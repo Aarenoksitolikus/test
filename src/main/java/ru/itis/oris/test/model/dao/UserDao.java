@@ -10,18 +10,17 @@ import static ru.itis.oris.test.util.DBconfig.prepareStatement;
 
 public class UserDao implements CRUDinterface<UserEntity> {
     private static final String SQL_GET_USER_BY_ID = "SELECT * FROM usr WHERE id = ?;";
-    private static final String SQL_AUTH = "SELECT * FROM usr WHERE email = ? AND password = ?;";
-    private static final String SQL_INSERT = "INSERT INTO usr VALUES (?, ?, ?, ?);";
+    private static final String SQL_AUTH = "SELECT * FROM usr WHERE username = ? AND password = ?;";
+    private static final String SQL_INSERT = "INSERT INTO usr VALUES (?, ?, ?);";
     private static final String SQL_DELETE_ONE = "DELETE FROM usr WHERE id = ?;";
 
     @Override
     public boolean create(UserEntity entity) {
         try{
             PreparedStatement preparedStatement = prepareStatement(SQL_INSERT);
-            preparedStatement.setLong(1, entity.getId());
-            preparedStatement.setString(2, entity.getUsername());
-            preparedStatement.setString(3, entity.getHashPassword());
-            preparedStatement.setString(4, entity.getRole());
+            preparedStatement.setString(1, entity.getUsername());
+            preparedStatement.setString(2, entity.getHashPassword());
+            preparedStatement.setString(3, entity.getRole());
             return preparedStatement.executeUpdate() != 0;
         } catch (SQLException e) {
             return false;

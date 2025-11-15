@@ -5,18 +5,18 @@
     <predefined_log_file id="Tomcat Catalina Log" />
     <predefined_log_file id="Tomcat Manager Log" />
     <predefined_log_file id="Tomcat Host Manager Log" />
-    <option name="catalinaBase" value="C:\Users\super\.SmartTomcat\test\test" />
+    <option name="catalinaBase" value="C:\Users\User\.SmartTomcat\test\test" />
     <option name="contextPath" value="/" />
-    <option name="docBase" value="C:\Users\super\OpenideProjects\test\src\webapp" />
+    <option name="docBase" value="C:\Users\super\OpenideProjects\test" />
     <option name="envOptions">
       <map />
     </option>
     <option name="extraClassPath" value="" />
     <option name="tomcatInfo">
       <TomcatInfo>
-        <option name="name" value="Apache Tomcat/11.0.14" />
-        <option name="path" value="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/Tomcat 11.0" />
-        <option name="version" value="11.0.14.0" />
+        <option name="name" value="Apache Tomcat/9.0.109" />
+        <option name="path" value="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/Tomcat 9.0" />
+        <option name="version" value="9.0.109.0" />
       </TomcatInfo>
     </option>
     <option name="vmOptions" value="" />

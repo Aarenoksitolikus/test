@@ -2,7 +2,9 @@
 <header>
     <nav>
         <ul class="nav-links">
-            <li><a href="/index">Index</a></li>
+            <li><a href="/index"> Главная </a></li>
+            <li><a href="/catalog"> Каталог </a></li>
+            <li><a href="/booking"> Главная </a></li>
         </ul>
     </nav>
 </header>

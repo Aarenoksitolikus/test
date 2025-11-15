@@ -1,95 +1,50 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
-
-<!--  common properties-->
-  <groupId>ru.itis.oris</groupId>
-  <artifactId>test</artifactId>
-  <version>0.0.1</version>
-  <name>test</name>
+  <groupId>ru.itis</groupId>
+  <artifactId>Homework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <java.version>17</java.version>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-
-<!--    versions-->
-    <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
-    <jakarta.jsp.version>3.1.1</jakarta.jsp.version>
-    <jakarta.jstl.version>3.0.0</jakarta.jstl.version>
-    <glassfish.jstl.version>3.0.1</glassfish.jstl.version>
-    <postgresql.driver.version>42.7.8</postgresql.driver.version>
-    <lombok.version>1.18.42</lombok.version>
-    <bcrypt.version>0.4</bcrypt.version>
-  </properties>
-
-<!--  repository references-->
-  <repositories>
-    <repository>
-      <id>glassfish-repo</id>
-      <name>GlassFish Repo</name>
-      <url>https://maven.java.net/content/repositories/releases/</url>
-    </repository>
-  </repositories>
 
   <dependencies>
     <dependency>
-      <groupId>jakarta.servlet</groupId>
-      <artifactId>jakarta.servlet-api</artifactId>
-      <version>${jakarta.servlet.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>jakarta.servlet.jsp</groupId>
-      <artifactId>jakarta.servlet.jsp-api</artifactId>
-      <version>${jakarta.jsp.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>jakarta.servlet.jsp.jstl</groupId>
-      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-      <version>${jakarta.jstl.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.glassfish.web</groupId>
-      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-      <version>${glassfish.jstl.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>${postgresql.driver.version}</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
     </dependency>
 
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
-      <scope>compile</scope>
+      <version>1.18.32</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
     </dependency>
 
     <dependency>
       <groupId>org.mindrot</groupId>
       <artifactId>jbcrypt</artifactId>
-      <version>${bcrypt.version}</version>
+      <version>0.4</version>
     </dependency>
-  </dependencies>
 
+  </dependencies>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>${maven.compiler.source}</source>
-          <target>${maven.compiler.target}</target>
+          <source>15</source>
+          <target>15</target>
         </configuration>
       </plugin>
     </plugins>

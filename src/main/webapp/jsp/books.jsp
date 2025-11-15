@@ -11,7 +11,7 @@
 <jsp:include page="/jsp/partial/header.jsp" />
 <main class="container">
 
-<p>Добро пожаловать, <c:if test="${user == null}">гость</c:if><c:if test="${user != null}">${user.username}</c:if>!</p>
+<h1>Книги</h1>
 
 </main>
 <jsp:include page="/jsp/partial/footer.jsp" />

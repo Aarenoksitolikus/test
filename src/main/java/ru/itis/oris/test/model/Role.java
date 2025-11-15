@@ -1,4 +1,4 @@
-package ru.itis.oris.test.playground.model;
+package ru.itis.oris.test.model;
 
 public enum Role {
 

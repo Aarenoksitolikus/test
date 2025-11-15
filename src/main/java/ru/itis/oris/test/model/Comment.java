@@ -1,4 +1,4 @@
-package ru.itis.oris.test.playground.model;
+package ru.itis.oris.test.model;
 
 import com.slavikjunior.deorm.annotations.Column;
 import com.slavikjunior.deorm.annotations.Id;

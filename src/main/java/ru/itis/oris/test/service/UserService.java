@@ -1,9 +1,13 @@
 package ru.itis.oris.test.service;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import ru.itis.oris.test.model.User;
 import ru.itis.oris.test.util.HashUtil;
 import ru.itis.oris.test.util.UserDAO;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -44,6 +48,19 @@ public class UserService {
         if (HashUtil.verify(pass, user.getHashPassword())) {
             return user;
         }
+        return null;
+    }
+
+    public static String checkUser(HttpServletRequest req) throws ServletException, IOException {
+        Cookie[] cookies = req.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if ("user".equals(cookie.getName())) {
+                    return cookie.getValue();
+                }
+            }
+        }
+
         return null;
     }
 

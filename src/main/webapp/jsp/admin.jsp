@@ -10,6 +10,12 @@
     <label>
         Создание книги
     </label>
+
+    <input type="text" name="title" placeholder="Введите название книги" required>
+    <input type="text" name="author" placeholder="Введите автора книги" required>
+
+    <button type="submit" name="action" value="createBook">Добавить книгу</button>
+    <button type="submit" name="action" value="deleteBook">Удалить книгу</button>
 </form>
 
 </body>

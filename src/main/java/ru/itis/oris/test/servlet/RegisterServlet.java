@@ -9,14 +9,11 @@ import ru.itis.oris.test.dao.UserDao;
 import ru.itis.oris.test.model.User;
 import ru.itis.oris.test.util.PasswordUtils;
 import java.io.IOException;
-import java.util.regex.Pattern;
 
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 
     UserDao userDao = new UserDao();
-    private static final Pattern EMAIL_PATTERN =
-        Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -38,7 +35,7 @@ public class RegisterServlet extends HttpServlet {
         }
 
         String hash = PasswordUtils.hashPassword(password);
-        User user = new User(username, hash, "user");
+        User user = new User(username, hash, "USER");
         userDao.save(user);
 
         resp.sendRedirect("login.jsp?success=1");

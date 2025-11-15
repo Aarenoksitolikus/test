@@ -10,20 +10,20 @@ import java.util.Optional;
 
 public class UserDao {
     private static final String INSERT_USER = """
-        INSERT INTO users (username, password_hash, role)
-        VALUES (?, ?, ?)
+        INSERT INTO users (username, hashPassword, role)
+        VALUES (?, ?, ?::user_role)
         RETURNING id;
     """;
 
-    private static final String FIND_BY_EMAIL = """
-        SELECT id, username, password_hash, role
+    private static final String FIND_BY_USERNAME = """
+        SELECT id, username, hashPassword, role
         FROM users
-        WHERE email = ?
+        WHERE username = ?
         """;
 
     public Optional<User> findByUsername(String username) {
         try (Connection conn = ConnectionManager.getConnection();
-             PreparedStatement ps = conn.prepareStatement(FIND_BY_EMAIL)){
+             PreparedStatement ps = conn.prepareStatement(FIND_BY_USERNAME)){
 
             ps.setString(1, username);
             ResultSet rs = ps.executeQuery();
@@ -49,7 +49,7 @@ public class UserDao {
 
             ps.setString(1, user.getUsername());
             ps.setString(2, user.getPasswordHash());
-            ps.setString(3, user.getRole());
+            ps.setString(3, user.getRole().toUpperCase());
 
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {

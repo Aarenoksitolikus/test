@@ -22,7 +22,7 @@
     <jakarta.jstl.version>3.0.0</jakarta.jstl.version>
     <glassfish.jstl.version>3.0.1</glassfish.jstl.version>
     <postgresql.driver.version>42.7.8</postgresql.driver.version>
-    <lombok.version>1.18.42</lombok.version>
+    <lombok.version>1.18.32</lombok.version>
     <bcrypt.version>0.4</bcrypt.version>
   </properties>
 

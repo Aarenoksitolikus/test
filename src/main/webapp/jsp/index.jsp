@@ -1,19 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<!DOCTYPE html>
-<html lang="ru">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-    <link href="/css/main.css" rel="stylesheet">
+    <title>Главная — Блог</title>
 </head>
 <body>
-<jsp:include page="/jsp/partial/header.jsp" />
-<main class="container">
-<!--    тут что-то будет-->
-</main>
-<jsp:include page="/jsp/partial/footer.jsp" />
+<h1>Список постов</h1>
 
-<script src="/js/script.js"></script>
+<c:if test="${empty posts}">
+    <p>Пока нет ни одного поста.</p>
+</c:if>
+
+<c:forEach var="post" items="${posts}">
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+        <small>Автор ID: ${post.authorId}</small><br>
+        <small>Дата: ${post.createdDate}</small><br><br>
+
+        <a href="post?id=${post.id}">Читать подробнее →</a>
+    </div>
+</c:forEach>
+
 </body>
 </html>
